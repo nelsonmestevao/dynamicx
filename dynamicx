@@ -1,0 +1,56 @@
+#!/usr/bin/env sh
+
+WALLPAPERS_PATH="$HOME/Pictures/Wallpapers/Earth"
+
+PICTURE="001"
+
+case $(date +%_H | sed 's/ //') in
+    0|1|2|3|4|5)
+        PICTURE="001"
+        ;;
+    6)
+        PICTURE="002"
+        ;;
+    7|8)
+        PICTURE="003"
+        ;;
+    9)
+        PICTURE="004"
+        ;;
+    10)
+        PICTURE="005"
+        ;;
+    11)
+        PICTURE="006"
+        ;;
+    12|13)
+        PICTURE="007"
+        ;;
+    14|15)
+        PICTURE="008"
+        ;;
+    16)
+        PICTURE="009"
+        ;;
+    17|18)
+        PICTURE="010"
+        ;;
+    19)
+        PICTURE="011"
+        ;;
+    20)
+        PICTURE="012"
+        ;;
+    21)
+        PICTURE="013"
+        ;;
+    22)
+        PICTURE="014"
+        ;;
+    23)
+        PICTURE="015"
+        ;;
+esac
+
+feh --bg-fill $WALLPAPERS_PATH/$PICTURE.png
+
